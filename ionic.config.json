@@ -1,5 +1,7 @@
 {
   "name": "taskun",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

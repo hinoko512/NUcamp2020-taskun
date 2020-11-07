@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="modalDismiss()">
+        <ion-icon slot="icon-only" name="arrow-back-outline" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="editTask(taskID)">
+        <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="removeTask(taskID)">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-title class="ion-padding">タスク名</ion-card-title>
+    <ion-card-content>{{tasks[taskID].name}}</ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-title class="ion-padding">タスク内容</ion-card-title>
+    <ion-card-content>{{tasks[taskID].content}}</ion-card-content>
+  </ion-card>
+</ion-content>
